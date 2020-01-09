@@ -1,103 +1,229 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
-    <meta content='提供闲鱼服务,极速刷' name='keywords' />
-    <meta content='闲鱼我想要，闲鱼留言，闲鱼超赞，闲鱼F丝，提供闲鱼服务' name='description' />
-    <title>闲鱼刷服务</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='闲鱼我想要，闲鱼超赞，闲鱼粉丝,快手秒刷双击，快手真人粉丝，快手真人双击' name='keywords' />
+    <meta content='闲鱼我想要，留言，闲鱼超赞，闲鱼F丝，快手秒刷双击，快手真人粉丝，快手真人双击' name='description' />
+    <title>闲鱼我想要</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.98b8b429.chunk.css" /></head>
-  
-  <body>
-    <div class="_gp-ck">
-      <section class="ouvJEz">
-        <h1 class="_1RuRku">咸鱼业务、抖音业务极速刷</h1>
-        <article class="_2rhmJa">
-          <p>咸鱼业务：</p>
-          <table>
-            <thead>
-              <tr>
-                <th style="text-align:center">业务名称</th>
-                <th style="text-align:center">价格</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="text-align:center">闲鱼宝贝收藏</td>
-                <td style="text-align:center">0.125 元/个</td></tr>
-              <tr>
-                <td style="text-align:center">闲鱼超赞</td>
-                <td style="text-align:center">0.125元/个</td></tr>
-              <tr>
-                <td style="text-align:center">闲鱼粉丝</td>
-                <td style="text-align:center">0.125元/个</td></tr>
-              <tr>
-                <td style="text-align:center">闲鱼我想要</td>
-                <td style="text-align:center">0.125 元/个</td></tr>
-            </tbody>
-          </table>
-          <p>抖音业务:</p>
-          <table>
-            <thead>
-              <tr>
-                <th style="text-align:center">业务名称</th>
-                <th style="text-align:center">价格</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="text-align:center">抖音live人气</td>
-                <td style="text-align:center">0.41675 元/个</td></tr>
-              <tr>
-                <td style="text-align:center">抖音双击</td>
-                <td style="text-align:center">0.3125元/个</td></tr>
-              <tr>
-                <td style="text-align:center">抖音粉丝</td>
-                <td style="text-align:center">0.5 元/个</td></tr>
-              <tr>
-                <td style="text-align:center">抖音视频播放</td>
-                <td style="text-align:center">0.002 元/个</td></tr>
-              <tr>
-                <td style="text-align:center">抖音分享</td>
-                <td style="text-align:center">0.002 元/个</td></tr>
-              <tr>
-                <td style="text-align:center">抖音真人评论</td>
-                <td style="text-align:center">0.625元/个</td></tr>
-              <tr>
-                <td style="text-align:center">抖音真人粉丝</td>
-                <td style="text-align:center">0.625元/个</td></tr>
-              <tr>
-                <td style="text-align:center">抖音真人双击</td>
-                <td style="text-align:center">0.625元/个</td></tr>
-            </tbody>
-          </table>
-          <p>各种业务，大量招接单！
-            <a href="tencent://message/?uin=896640238&Site=&Menu=yes" target="_blank">联系客服，立即咨询</a></p>
-        </article>
-        <div></div>
-      </section>
-    </div>
-    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(function(){
-		$.ajax({
-		     type: "get",
-		     async: false,
-		     url: "https://www.ly.com/youlun/CruiseRequireOrder/RequireOrder.ashx?type=SearchRouteData",
-		     dataType: "jsonp",
-		     jsonp: "callback",//传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
-		     jsonpCallback:"?",//自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
-		     success: function(json){
-			 console.info(json)
-		     },
-		     error: function(){
-			 console.info('fail')
-		     }
-		 });
-	})	
-    </script>
-  </body>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/styles.98b8b429.chunk.css" />
+
+<body>
+    <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="javascript:void(0)">2020闲鱼排名</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-pills navbar-right">
+                <li role="presentation"><a href="./index.html">闲鱼业务</a></li>
+                <li role="presentation"><a href="./douyin.html">抖音业务</a></li>
+                <li role="presentation"><a href="./kuaishou.html">快手业务</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <main>
+        <section>
+            <div class="bs-callout bs-callout-info">
+                <h4>闲鱼业务</h4>
+                <p>刷我想要，刷超赞，刷粉丝，刷浏览量</p>
+            </div>
+            <table class="table table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>业务名称</th>
+                        <th>价格</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>闲鱼宝贝收藏</td>
+                        <td>0.125 元/个</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>闲鱼超赞</td>
+                        <td>0.125 元/个</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>闲鱼粉丝</td>
+                        <td>0.125 元/个</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>闲鱼我想要</td>
+                        <td>0.125 元/个</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <div class="bs-callout bs-callout-info">
+                <h4>抖音业务</h4>
+                <p>抖音live人气，抖音双击，抖音粉丝，抖音视频播放，抖音分享，抖音真人评论，抖音真人粉丝，抖音真人双击</p>
+            </div>
+            <table class="table table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>业务名称</th>
+                        <th>价格</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>抖音live人气</td>
+                        <td>0.41675 元/个</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>抖音双击</td>
+                        <td>0.3125元/个</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>抖音粉丝</td>
+                        <td>0.5 元/个</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>抖音视频播放</td>
+                        <td>0.002 元/个</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>抖音分享</td>
+                        <td>0.002 元/个</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>抖音真人评论</td>
+                        <td>0.625元/个</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>抖音真人粉丝</td>
+                        <td>0.625元/个</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>抖音真人双击</td>
+                        <td>0.625元/个</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <div class="bs-callout bs-callout-info">
+                <h4>快手业务</h4>
+                <p>真人粉丝，真人评论，真人双击，说说点赞，评论点赞，秒刷双击，随机评论，作品播放，直播爱心</p>
+            </div>
+            <table class="table table-hover table-condensed">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>业务名称</th>
+                        <th>价格</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>真人粉丝</td>
+                        <td>5元10个</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>真人评论</td>
+                        <td>5元10个</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>真人双击</td>
+                        <td>5元10个</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>说说点赞</td>
+                        <td>5元100个</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>评论点赞</td>
+                        <td>5元100个</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>秒刷双击</td>
+                        <td>5元100个</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>随机评论</td>
+                        <td>7元100个</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>作品播放</td>
+                        <td>1元1万个</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>直播爱心</td>
+                        <td>1元1万个</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <section class="help">
+        <ul>
+            <li class="yahei">
+                <h2>联系我们</h2>
+                <span><img src="/skin/images/i_11.jpg" align="absmiddle"><i>地址:</i></span>
+                <span><img src="/skin/images/i_12.jpg" align="absmiddle"><i>QQ:</i></span>
+                <span><img src="/skin/images/i_13.jpg" align="absmiddle"><i>客服:</i></span>
+                <span><img src="/skin/images/i_14.jpg" align="absmiddle"><i>邮箱:</i>@qq.com</span>
+            </li>
+            <li>
+                <h2 class="likes-t">友情链接</h2>
+                <ul class="likes yahei">
+                </ul>
+            </li>
+            <li>
+                <h2>关于我们</h2>
+                <span class="content-fot yahei"><img alt="" src="/skin/images/1-15092915502vo.jpg" style="border-width: 0px; border-style: solid;">
+                    <div>
+                        <div>
+                            <p></p>
+                            <p>
+                                <b>欢迎光临本工作室</b>
+                            </p>
+                        </div>
+                    </div>
+                </span>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </section>
+    <footer>
+        <p>© 2020 &nbsp;刷闲鱼，刷抖音，刷快手 <a href="#">网站地图</a></p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
 
 </html>
