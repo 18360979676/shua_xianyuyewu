@@ -61,6 +61,7 @@ main section{
 }
 .content_left{
     width: 114px;
+    border: 0;
 }
 .content_left li{
     text-align: center;
@@ -98,6 +99,9 @@ main.on_fix{
     color: #a94442;
 }
 
+.help{
+    margin-top: 40px;
+}
 .help ul li {
     list-style-type: none;
     float: left;
