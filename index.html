@@ -428,8 +428,11 @@
                 y-=80;/*悬浮菜单的高度*/
                 window.scrollTo(0,y);
             }
-            $("main section").click(function(this){
-                locateAt($(this).attr('id'))
+            $("main section").each(function(){
+                var _this = $(this);
+                _this.click(function(e){
+                    locateAt(_this.attr('id'))
+                })
             })
         })
     </script>
