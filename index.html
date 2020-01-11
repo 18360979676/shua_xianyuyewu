@@ -22,14 +22,14 @@
               <a class="" href="javascript:void(0)">2020闲鱼排名</a>
         </div>
         <ul class="nav nav-pills navbar-right">
-            <li role="presentation"><a href="javascript:void(0)">闲鱼</a></li>
-            <li role="presentation"><a href="javascript:void(0)">抖音</a></li>
-            <li role="presentation"><a href="javascript:void(0)">快手</a></li>
-            <li role="presentation"><a href="javascript:void(0)">新浪微博</a></li>
-            <li role="presentation"><a href="javascript:void(0)">小红书</a></li>
-            <li role="presentation"><a href="javascript:void(0)">网易考拉</a></li>
-            <li role="presentation"><a href="javascript:void(0)">大众点评</a></li>
-            <li role="presentation"><a href="javascript:void(0)">拼多多</a></li>
+            <li role="presentation"><a href="javascript:void(0)" data-id="xianyu">闲鱼</a></li>
+            <li role="presentation"><a href="javascript:void(0)" data-id="douyin">抖音</a></li>
+            <li role="presentation"><a href="javascript:void(0)" data-id="kuaishou">快手</a></li>
+            <li role="presentation"><a href="javascript:void(0)" data-id="weibo">新浪微博</a></li>
+            <li role="presentation"><a href="javascript:void(0)" data-id="xiaohongshu">小红书</a></li>
+            <li role="presentation"><a href="javascript:void(0)" data-id="kaola">网易考拉</a></li>
+            <li role="presentation"><a href="javascript:void(0)" data-id="dazhongdianpin">大众点评</a></li>
+            <li role="presentation"><a href="javascript:void(0)" data-id="pingduoduo">拼多多</a></li>
         </ul>
       </section>
       
@@ -431,7 +431,7 @@
             $("main section").each(function(){
                 var _this = $(this);
                 _this.click(function(e){
-                    locateAt(_this.attr('id'))
+                    locateAt(_this.attr('data-id'))
                 })
             })
         })
