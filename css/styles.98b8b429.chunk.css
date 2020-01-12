@@ -33,6 +33,7 @@ nav a{
 nav ul{
     list-style: none;
     float: right;
+    margin: 0
 }
 ul.title_list li{
     float: left;
@@ -63,18 +64,10 @@ main section{
     width: 114px;
     border: 0;
 }
-.content_left li{
-    text-align: center;
-    float: none !important;
-}
-.content_left li a{
-    border: 0 !important;
-}
 .content_right{
     min-width: 400px;
-    min-height: 378px;
+    min-height: 384px;
     width: 980px;
-    margin-left: -2px;
     background: #fff; 
 }
 .content_right .tab-pane{
@@ -106,12 +99,11 @@ main.on_fix{
     list-style-type: none;
     float: left;
     width: 338px;
-    margin-right: 14px;
-    line-height: 24px;
+    margin-left: 14px;
 }
 
 .help li > span {
-    padding-bottom: 20px;
+    padding-top: 20px;
     display: block;
 }
 
@@ -132,4 +124,113 @@ footer {
     color: #999;
     background-color: #fff;
     border-top: 1px solid #eaeaea;
+}
+
+#common-silder{
+    position: fixed;
+    width: 40px;
+    background: #333;
+    height: 100%;
+    top: 0;
+    z-index: 99999;
+    min-height: 600px;
+    right: 0px;
+}
+.common-silder-tools li{
+    color: #333;
+    height: 39px;
+    margin: 8px 0;
+    cursor: pointer;
+    background: url(http://pic4.40017.cn/index/slide/2016/06/15/13/shmYRQ.png);
+    position: relative;
+    list-style: none;
+    background-position: -80px -47px;
+    margin-top: 0;
+}
+.common-silder-tools li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.common-silder-tools li span{
+    position: absolute;
+    height: 47px;
+    left: -120px;
+    text-align: center;
+    background: #505050;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 15px;
+    line-height: 47px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.common-silder-tools li:hover span {
+    left: -86px;
+    opacity: 1;
+    visibility: visible
+}
+.common-silder-tools li span i{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #505050;
+    border-bottom: 5px solid transparent;
+    top: 50%;
+    right: -5px;
+    margin-top: -5px;
+}
+.common-silder-tools li:first-child{
+    margin-top: 0
+}
+.common-silder-tools .c-k{
+    background-position: -80px -47px;
+}
+.common-cstb{
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    right: 0;
+}
+.common-silder-tools .c-q{
+    background-position: -120px -94px;
+}
+.common-silder-tools li.c-q span{
+    visibility: hidden;
+    opacity: 0;
+    left: -184px;
+    top: -130px;
+    width: 166px;
+    padding: 0;
+    height: 224px;
+    transition: all .3s ease-in-out;
+}
+
+.common-silder-tools .c-q:hover span {
+    left: -166px;
+    opacity: 1;
+    visibility: visible
+}
+.common-silder-tools li.c-q span img{
+    width: 166px;
+    height: 166px;
+    display: block;
+    position: absolute;
+    bottom: 66px;
+}
+.common-silder-tools li.c-q span p{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    line-height: 66px;
+    font-size: 34px;
+}
+.common-silder-tools .c-t{
+    background-position: -80px 0
 }
